@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Perícia Criminal</title>
+
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#8b0000">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:90%;
+    max-width:500px;
+    text-align:center;
+}
+
+.logo{
+    width:120px;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.subtitulo{
+    color:#ccc;
+    margin-bottom:40px;
+}
+
+.botao{
+    display:block;
+    width:100%;
+    padding:20px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:12px;
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+    text-decoration:none;
+    box-sizing:border-box;
+    transition:0.2s;
+}
+
+.botao:hover{
+    transform:scale(1.02);
+}
+
+.transito{
+    background:#1565c0;
+}
+
+.mvi{
+    background:#8b0000;
+}
+
+.suicidio{
+    background:#6a1b9a;
+}
+
+footer{
+    margin-top:40px;
+    color:#888;
+    font-size:12px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="icon.png" class="logo">
+
+<h1>Perícia Criminal</h1>
+
+<div class="subtitulo">
+Central de acesso aos módulos periciais
+</div>
+
+<a class="botao transito"
+href="https://meirere.github.io/pwa-transito/">
+Perícia de Trânsito
+</a>
+
+<a class="botao mvi"
+href="https://meirere.github.io/pwa-mvi/">
+Morte Violenta Intencional
+</a>
+
+<a class="botao suicidio"
+href="https://meirere.github.io/pwa-suic-dio/">
+Perícia de Suicídio
+</a>
+
+<footer>
+© Perito Meirere
+</footer>
+
+</div>
+
+<script>
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+}
+
+</script>
+
+</body>
+</html>
