@@ -1,4 +1,4 @@
-const CACHE_NAME = 'hub-cache-v2';
+const CACHE_NAME = 'hub-cache-v3';
 
 const urlsToCache = [
   './',
